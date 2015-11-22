@@ -332,3 +332,139 @@
     text-decoration: underline;
 }
 /*lang end*/
+/*model*/
+.model_item_container {
+    margin: 0px 29px 29px 0px;
+    overflow: hidden;
+    width: 314px;
+    float: left;
+}
+.model_item_container:nth-child(3n) {
+    margin-right: 0px;
+}
+.model_item {
+    border: 2px solid #000;
+    float: left;
+    width: 310px;
+    overflow: hidden;
+    height: 410px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.buttons {
+    width: 137px;
+    line-height: 35px;
+    display: block;
+    float: left;
+    text-align: center;
+    border: 1px solid #7a7a7a;
+    font-family: "Helvetica-Italic";
+    font-size: 14px;
+    text-transform: lowercase;
+    color: #000;
+}
+.more.buttons {
+    float: right;
+}
+.buttons:hover {
+    text-decoration: underline;
+}
+.title {
+    font-family: "Helvetica-Light";
+    color: #353535;
+    margin: 37px 0px 21px;
+}
+.search_model {
+    padding: 13px 15px;
+    background-color: #313131;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.search_model_input {
+    font-family: "Helvetica-Light";
+    color: #fff;
+    font-size: 14.5px;
+    float: left;
+    margin-right: 19px;
+}
+.search_model_input label {
+    margin-right: 12px;
+}
+.search_model_f {
+    border: none;
+    width: 278px;
+    height: 32px;
+    text-align: center;
+    text-indent: 5px;
+}
+.search_model_f.age {
+    width: 50px;
+    text-indent: 0px;
+}
+.search_model_f.id {
+    width: 70px;
+}
+.sear_model_button {
+    background-image: url(../img/search_button.jpg);
+    border: none;
+    height: 34px;
+    width: 210px;
+}
+.model_info {
+    overflow: hidden;
+    float: left;
+    width: 655px;
+}
+.model_name_id {
+    font-family: "Helvetica-Light";
+    padding: 10px 15px;
+    background-color: #313131;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+}
+.model_id {
+    font-size: 12px;
+    margin-top: 9px;
+}
+.models_card {
+    color: #1b1b1c;
+     font-family:"Helvetica-Italic";
+    font-size: 14px;
+}
+.models_card_title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.tabs-box__item {
+    display: none;
+}
+.tabs-box__item.active {
+    display: block;
+}
+
+.tabs-header {
+    overflow: hidden;
+    display: inline-block;
+}
+.tabs-header__title {
+    float: left;
+    width: 183px;
+    height: 59px;
+    background-image: url(../img/uslug_title_bg.png);
+    text-align: center;
+    line-height: 43px;
+    font-family: "PTSansBold";
+    font-size: 16px;
+    color: #f7931e;
+    cursor: pointer;
+}
+
+.tabs-header__title:hover {
+    background-image: url(../img/uslug_title_bg_hov_avtive.png);
+    color:#fff;
+
+}
+/*model end*/
