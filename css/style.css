@@ -105,8 +105,8 @@
 .top_menu_item.active a {
     color: #fff;
 }
-.active{
-    background-color: #313131;
+.top_menu_item.active {
+    background-color: #313131; 
 }
 /*news */
 .container {
@@ -430,8 +430,12 @@
 }
 .models_card {
     color: #1b1b1c;
-     font-family:"Helvetica-Italic";
+    font-family: "Helvetica-Italic";
     font-size: 14px;
+    margin-bottom: 20px;
+}
+.model_item img {
+    width: 100%;
 }
 .models_card_title {
     margin-bottom: 10px;
@@ -447,24 +451,76 @@
 
 .tabs-header {
     overflow: hidden;
-    display: inline-block;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
 }
 .tabs-header__title {
     float: left;
-    width: 183px;
-    height: 59px;
-    background-image: url(../img/uslug_title_bg.png);
-    text-align: center;
-    line-height: 43px;
-    font-family: "PTSansBold";
+    font-family: "Helvetica-Light";
     font-size: 16px;
-    color: #f7931e;
+    line-height: 38px;
+    color: #313131;
     cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 20px;
 }
-
-.tabs-header__title:hover {
-    background-image: url(../img/uslug_title_bg_hov_avtive.png);
-    color:#fff;
-
+.tabs-header__title::before {
+    position: relative;
+    display: block;
+    margin: auto;
+    content: "";
+    float: left;
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.video:before {
+    background-position: -79px 0px;
+}
+.tabs-header__title:hover{
+     color: #f7931e;
+     text-decoration:underline;
+}
+.tabs-header__title.active{
+    color: #f7931e;
+     text-decoration:underline;
+}
+.tabs-header__title.video:hover:before {
+    background-position: -116px -1px;
+}
+.tabs-header__title.lookbook:hover:before {
+    background-position: -38px 0px;
+}
+.tabs-header__title.lookbook.active:before{
+     background-position: -38px 0px;
+}
+.tabs-header__title.video.active:before{
+     background-position: -116px -1px;
+}
+.lookbook_item {
+    width: 118px;
+    height: 120px;
+    border: 2px solid #000;
+    float: left;
+    overflow: hidden;
+    margin-right: 11px;
+    margin-bottom: 11px;
+}
+.lookbook_item:nth-child(5n) {
+    margin-right: 0px;
+}
+.video_model_item {
+    width: 324px;
+    float: left;
+    overflow: hidden;
+    margin-right: 7px;
+    margin-bottom:8px;
+}
+.video_model_item:nth-child(2n) {
+    margin-right: 0px;
 }
 /*model end*/
