@@ -26,6 +26,9 @@
 		</div>
 		<section class="head">
 			<div class="cr">
+				<div class="model_button">
+					<a href="#enter" class="open_modal buttons"><span>Хочу стать моделью!</span></a>
+				</div>
 				<div class="logo">
 					<a href="">
 						<img src="img/logo_gif.gif" alt=""/>
@@ -112,19 +115,86 @@
 					<div class="model_name">Название фотосессии либо текст</div>
 					<div class="model_id">31.10.2015</div>
 				</div>
+				<a href="" class="buttons back"><span>перейти назад</span></a>
 				<div class="models_card">
-					<div class="models_card_title">Models Card (Характеристики моделя):</div>
-					<p>Дата рождения: 19.11.2007</p>
-					<p>Рост: 120 см</p>
-					<p>Вес: 45 кг</p>
-					<p>Рост: 120 см</p>
-					<p>Вес: 45 кг</p>
-					<p>Рост: 120 см</p>
-					<p>Вес: 45 кг</p>
-					<div class="models_card_title">Описание:</div>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more rAldus PageMaker inIpsum.
-					</p>
+					<div class="models_card_title"><b>Сотрудничество с моделью!</b></div>
+					<form method="">
+					<label class="sotrudnichat_form">
+						<span>Наименование компании:</span>
+						<input type="" class="admin_input_f"/>
+					</label>
+					<label class="sotrudnichat_form">
+						<span>Контактные телефоны:</span>
+						<input type="" class="admin_input_f"/>
+					</label>
+					<label class="sotrudnichat_form">
+						<span>Реквизиты компании:</span>
+						<input type="" class="admin_input_f"/>
+					</label>
+					<label class="sotrudnichat_form">
+						<span>Логотип компании:</span>
+						<input type="" class="admin_input_f"/>
+					</label>
+					<label class="sotrudnichat_form">
+						<span>Описание компании::</span>
+						<input type="" class="admin_input_f"/>
+					</label>
+					<label class="sotrudnichat_form">
+						<span>ФИО заказчика:</span>
+						<input type="" class="admin_input_f"/>
+					</label>
+					<label class="sotrudnichat_form">
+						<span>Должность:</span>
+						<input type="" class="admin_input_f"/>
+					</label>
+					
+					<div class="models_card_title"><b>Как бы вы хотели посотрудничать с данным ребенком?</b></div>
+					<label class="model_cheked">
+					<input type="radio" class="check"/>
+						<span>Эксклюзивное лицо компании (лицо компании);</span>
+						
+					</label>
+					<label class="model_cheked">
+						<span>Модель (дефиле, презентация продукции);</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Дефиле (показ коллекций);</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Телеведущая (ий);</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Радиоведущая (ий);</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Гость мероприятия, интервью;</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Фотомодель;</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Актриса, актёр;</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Приглашение модели к сотрудничеству, с выездом в другой город, за рубеж;</span>
+						<input type="radio" class="check"/>
+					</label>
+					<label class="model_cheked">
+						<span>Другое сотрудничество, чёткое описание:</span>
+						<input type="radio" class="check"/>
+					</label>
+					<textarea class="admin_input_f text" placeholder="Текст описание..."></textarea>
+					
+					<div class="models_card_title"><b>С уважением компания KZ fashion School Agency!</b></div>
+					<button type="submit" name="submit1" class="buttons sotrud" >Отправить</button>
+					</form>
 				</div>
 				
 			</div>
@@ -162,5 +232,16 @@
 		</div>
 		<div class="top_line"></div>
 	</footer>
+<div id="enter" class="modal_div"> <!-- скрытый див с уникальным id = modal1 -->
+	<span class="modal_close"></span>
+	<span class="title_z">Отправьте нам заявку</span>
+        <form method="POST" name="form1" action="form.php" >
+			<input  name="name1" id="name" maxlength="200" class="admin_input_f modal" type="text" size="1"  required placeholder="ФИО..."/>
+			<input   name="phone1" id="user_phone" maxlength="200" class="admin_input_f  modal" type="text" size="1"  required placeholder="Контактный номер..."/>
+			<input  name="name1" id="name" maxlength="200" class="admin_input_f modal" type="text" size="1"  required placeholder="Эл. почта..."/>		
+			<button type="submit" name="submit1" class="buttons modal_b" >Отправить</button>
+		</form>
+	</div>
+	<div id="overlay"></div>
 </body>
 </html>
